@@ -1,0 +1,60 @@
+{
+  "run": "baseline_s_ft",
+  "stage": "finetune",
+  "args": {
+    "stage": "finetune",
+    "init": "ckpt/baseline_s.pt",
+    "run_name": "baseline_s_ft",
+    "data": "data/fineweb_edu",
+    "max_train_tokens": null,
+    "out_dir": "ckpt",
+    "log_dir": "logs",
+    "block_size": 512,
+    "d_model": 384,
+    "n_layer": 6,
+    "n_head": 6,
+    "ffn_hidden": 1024,
+    "window": 128,
+    "hybrid_style": "intra",
+    "moe_layers": null,
+    "n_experts": 8,
+    "top_k": 1,
+    "n_shared": 1,
+    "no_alpha": false,
+    "spike_k": 1.0,
+    "steps": 500,
+    "batch_size": 32,
+    "lr": 0.0003,
+    "min_lr": 2.9999999999999997e-05,
+    "warmup": 50,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "eval_every": 100,
+    "eval_iters": 20,
+    "seed": 1337
+  },
+  "step": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "train_loss": [
+    null,
+    5.780762276649475,
+    5.74324254989624,
+    5.708753871917724,
+    5.658355350494385,
+    5.659829211235047
+  ],
+  "val_loss": [
+    5.801169395446777,
+    5.796126365661621,
+    5.719171524047852,
+    5.714361667633057,
+    5.674568176269531,
+    5.693266868591309
+  ]
+}

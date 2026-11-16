@@ -1,0 +1,59 @@
+{
+  "run": "spike_k1",
+  "stage": "spike",
+  "args": {
+    "stage": "spike",
+    "init": "ckpt/baseline_s.pt",
+    "run_name": "spike_k1",
+    "data": "data/fineweb_edu",
+    "out_dir": "ckpt",
+    "log_dir": "logs",
+    "block_size": 512,
+    "d_model": 384,
+    "n_layer": 6,
+    "n_head": 6,
+    "ffn_hidden": 1024,
+    "window": 128,
+    "hybrid_style": "intra",
+    "moe_layers": null,
+    "n_experts": 8,
+    "top_k": 1,
+    "n_shared": 1,
+    "no_alpha": false,
+    "spike_k": 1.0,
+    "steps": 500,
+    "batch_size": 32,
+    "lr": 0.0003,
+    "min_lr": 2.9999999999999997e-05,
+    "warmup": 50,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "eval_every": 100,
+    "eval_iters": 20,
+    "seed": 1337
+  },
+  "step": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "train_loss": [
+    null,
+    5.862779812812805,
+    5.816371965408325,
+    5.777510676383972,
+    5.75006781578064,
+    5.727694110870361
+  ],
+  "val_loss": [
+    5.945335388183594,
+    5.863018035888672,
+    5.797140598297119,
+    5.758213996887207,
+    5.7786030769348145,
+    5.712281227111816
+  ]
+}

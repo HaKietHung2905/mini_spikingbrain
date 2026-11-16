@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# Mini-SpikingBrain: large / generated files (do not commit)
+# ============================================================
+# tokenized datasets (hundreds of MB; regenerate with: python data.py)
+data/
+*.bin
+
+# model checkpoints (~60 MB each; regenerate with train.py)
+ckpt/
+*.pt
+*.pth
+*.safetensors
+
+# Hugging Face caches
+.cache/huggingface/
+
+# macOS
+.DS_Store

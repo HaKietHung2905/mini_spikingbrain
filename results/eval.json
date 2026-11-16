@@ -1,0 +1,70 @@
+[
+  {
+    "label": "baseline_s+spike(k=1.0)",
+    "attn_modes": [
+      "fa",
+      "fa",
+      "fa",
+      "fa"
+    ],
+    "moe_layers": [],
+    "spike_k": 1.0,
+    "val_loss": 5.911675930023193,
+    "spike": {
+      "sparsity": 0.3718209026528777,
+      "avg_spikes": 0.9649761392058228,
+      "in_pm7": 0.9966092006765681,
+      "max_abs_count": 89
+    },
+    "coding": {
+      "dense_MACs": 6476005376,
+      "ternary": {
+        "adds": 6262422272,
+        "avg_steps": 20.0,
+        "max_steps": 89,
+        "energy_ratio": 0.019340386267153092
+      },
+      "bitwise": {
+        "adds": 4487699552,
+        "avg_steps": 4.285714285714286,
+        "max_steps": 7,
+        "energy_ratio": 0.013859468272312936
+      }
+    },
+    "moe": null
+  },
+  {
+    "label": "baseline_s+spike(k=2.0)",
+    "attn_modes": [
+      "fa",
+      "fa",
+      "fa",
+      "fa"
+    ],
+    "moe_layers": [],
+    "spike_k": 2.0,
+    "val_loss": 5.831573963165283,
+    "spike": {
+      "sparsity": 0.20955032238857352,
+      "avg_spikes": 1.9810304161455992,
+      "in_pm7": 0.9818792000091333,
+      "max_abs_count": 181
+    },
+    "coding": {
+      "dense_MACs": 6476005376,
+      "ternary": {
+        "adds": 12839105760,
+        "avg_steps": 40.535714285714285,
+        "max_steps": 181,
+        "energy_ratio": 0.03965131285277056
+      },
+      "bitwise": {
+        "adds": 6659338656,
+        "avg_steps": 5.25,
+        "max_steps": 8,
+        "energy_ratio": 0.02056619248859623
+      }
+    },
+    "moe": null
+  }
+]
