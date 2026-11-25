@@ -172,15 +172,6 @@ An earlier sweep (different val batches) also gave k = 0.5 â†’ 6.16 and k = 4 â†
    as in the paper (69%), so the two numbers are not directly comparable.
 
 ---
-
-## Next steps
-
-- [ ] `spike_k2`: fine-tune with k = 2 and compare against `baseline_s_ft`
-- [ ] `convert` vs `convert_scratch`: does weight reuse converge faster? (Sec. 3.1)
-- [ ] `upcycle` vs `upcycle --no_alpha`: step-0 loss and expert load balance (Sec. 3.2)
-- [ ] passkey / needle-in-a-haystack eval to show why the paper keeps a few FA layers
-- [ ] convert a small pretrained model (e.g. SmolLM2-135M) instead of a from-scratch baseline
-
 ## Limitations
 
 - Context is short (256 tokens), so the O(n) speed/memory advantage of LA/SWA is not visible;
